@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.DownloadMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Download">
+        <id column="CONTENT_ID" property="CONTENT_ID" />
+        <result column="IMAGE" property="IMAGE" />
+        <result column="FILE_URL" property="FILE_URL" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="SIZE" property="SIZE" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONTENT_ID, IMAGE, FILE_URL, CONTENT, SIZE
+    </sql>
+
+</mapper>

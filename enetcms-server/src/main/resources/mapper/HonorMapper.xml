@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.HonorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Honor">
+        <id column="CONTENT_ID" property="CONTENT_ID" />
+        <result column="AWARDS" property="AWARDS" />
+        <result column="PROJECT" property="PROJECT" />
+        <result column="AWARDING_UNIT" property="AWARDING_UNIT" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONTENT_ID, AWARDS, PROJECT, AWARDING_UNIT
+    </sql>
+
+</mapper>

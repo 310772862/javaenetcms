@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.JobFairMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.JobFair">
+        <result column="ID" property="ID" />
+        <result column="CATEGORY_ID" property="CATEGORY_ID" />
+        <result column="NAME" property="NAME" />
+        <result column="HOLD_TIME_START" property="HOLD_TIME_START" />
+        <result column="HOLD_TIME_END" property="HOLD_TIME_END" />
+        <result column="SIGNUP_TIME_START" property="SIGNUP_TIME_START" />
+        <result column="SIGNUP_TIME_END" property="SIGNUP_TIME_END" />
+        <result column="ADDRESS" property="ADDRESS" />
+        <result column="ADDRESS_MAP" property="ADDRESS_MAP" />
+        <result column="ORGANIZER" property="ORGANIZER" />
+        <result column="PROLOGUE" property="PROLOGUE" />
+        <result column="POSITION_NUM" property="POSITION_NUM" />
+        <result column="RESERVED" property="RESERVED" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="BOOKING_CONTENT" property="BOOKING_CONTENT" />
+        <result column="SERVICE" property="SERVICE" />
+        <result column="PARTICIPATE_COMPANY" property="PARTICIPATE_COMPANY" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="UPDATE_TIME" property="UPDATE_TIME" />
+        <result column="STATUS" property="STATUS" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="VIEW" property="VIEW" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        CATEGORY_ID, NAME, HOLD_TIME_START, HOLD_TIME_END, SIGNUP_TIME_START, SIGNUP_TIME_END, ADDRESS, ADDRESS_MAP, ORGANIZER, PROLOGUE, POSITION_NUM, RESERVED, CONTENT, BOOKING_CONTENT, SERVICE, PARTICIPATE_COMPANY, CREATE_TIME, UPDATE_TIME, STATUS, SORT_ID, IS_DEL, VIEW
+    </sql>
+
+</mapper>

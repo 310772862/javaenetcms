@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.AnnexMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.Annex">
+        <result column="ID" property="ID" />
+        <result column="NAME" property="NAME" />
+        <result column="URL" property="URL" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="FILE_SIZE" property="FILE_SIZE" />
+        <result column="TYPE" property="TYPE" />
+        <result column="EXT" property="EXT" />
+        <result column="FROM" property="FROM" />
+        <result column="IS_DEL" property="IS_DEL" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        NAME, URL, CREATE_TIME, FILE_SIZE, TYPE, EXT, FROM, IS_DEL
+    </sql>
+
+</mapper>

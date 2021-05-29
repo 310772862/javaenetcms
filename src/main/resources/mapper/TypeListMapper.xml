@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.TypeListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.TypeList">
+        <result column="ID" property="ID" />
+        <result column="PARENT_ID" property="PARENT_ID" />
+        <result column="NAME" property="NAME" />
+        <result column="TYPE" property="TYPE" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="VIEW" property="VIEW" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        PARENT_ID, NAME, TYPE, CREATE_TIME, SORT_ID, IS_DEL, VIEW
+    </sql>
+
+</mapper>

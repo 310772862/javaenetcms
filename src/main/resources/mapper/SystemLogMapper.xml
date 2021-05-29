@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.SystemLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.SystemLog">
+        <result column="ID" property="ID" />
+        <result column="NAME" property="NAME" />
+        <result column="MODEL" property="MODEL" />
+        <result column="URL" property="URL" />
+        <result column="USER_ID" property="USER_ID" />
+        <result column="PARAMETER" property="PARAMETER" />
+        <result column="DATA" property="DATA" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="IP" property="IP" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="STATUS" property="STATUS" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        NAME, MODEL, URL, USER_ID, PARAMETER, DATA, CREATE_TIME, IP, IS_DEL, STATUS
+    </sql>
+
+</mapper>

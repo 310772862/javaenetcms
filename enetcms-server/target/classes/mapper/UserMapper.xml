@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.User">
+        <result column="ID" property="ID" />
+        <result column="EMAIL" property="EMAIL" />
+        <result column="USERNAME" property="USERNAME" />
+        <result column="PASSWORD" property="PASSWORD" />
+        <result column="JOB_NUMBER" property="JOB_NUMBER" />
+        <result column="NAME" property="NAME" />
+        <result column="ID_NUMBER" property="ID_NUMBER" />
+        <result column="ID_NUMBER_POSITIVE_PIC" property="ID_NUMBER_POSITIVE_PIC" />
+        <result column="ID_NUMBER_NEGATIVE_PIC" property="ID_NUMBER_NEGATIVE_PIC" />
+        <result column="GENDER" property="GENDER" />
+        <result column="BIRTHDAY" property="BIRTHDAY" />
+        <result column="HEIGHT" property="HEIGHT" />
+        <result column="WORK_EXPERIENCE" property="WORK_EXPERIENCE" />
+        <result column="WORK_START_TIME" property="WORK_START_TIME" />
+        <result column="ADDRESS" property="ADDRESS" />
+        <result column="GRADUATED_SCHOOL" property="GRADUATED_SCHOOL" />
+        <result column="MARITAL_STATUS" property="MARITAL_STATUS" />
+        <result column="EDUCATION" property="EDUCATION" />
+        <result column="MAJOR" property="MAJOR" />
+        <result column="COMPUTER_LEVEL" property="COMPUTER_LEVEL" />
+        <result column="ENGLISH_LEVEL" property="ENGLISH_LEVEL" />
+        <result column="AIMS_JOB_POSITION" property="AIMS_JOB_POSITION" />
+        <result column="AIMS_SALARY_REQUIREMENTS" property="AIMS_SALARY_REQUIREMENTS" />
+        <result column="AIMS_WORK_PLACE" property="AIMS_WORK_PLACE" />
+        <result column="AIMS_JOBS_TYPE" property="AIMS_JOBS_TYPE" />
+        <result column="AIMS_JOB_STATUS" property="AIMS_JOB_STATUS" />
+        <result column="AIMS_DESCRIPTION" property="AIMS_DESCRIPTION" />
+        <result column="ACTUAL_WORK_EXPERIENCE" property="ACTUAL_WORK_EXPERIENCE" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="UPDATE_TIME" property="UPDATE_TIME" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="STATUS" property="STATUS" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="VIEW" property="VIEW" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        EMAIL, USERNAME, PASSWORD, JOB_NUMBER, NAME, ID_NUMBER, ID_NUMBER_POSITIVE_PIC, ID_NUMBER_NEGATIVE_PIC, GENDER, BIRTHDAY, HEIGHT, WORK_EXPERIENCE, WORK_START_TIME, ADDRESS, GRADUATED_SCHOOL, MARITAL_STATUS, EDUCATION, MAJOR, COMPUTER_LEVEL, ENGLISH_LEVEL, AIMS_JOB_POSITION, AIMS_SALARY_REQUIREMENTS, AIMS_WORK_PLACE, AIMS_JOBS_TYPE, AIMS_JOB_STATUS, AIMS_DESCRIPTION, ACTUAL_WORK_EXPERIENCE, CREATE_TIME, UPDATE_TIME, SORT_ID, STATUS, IS_DEL, VIEW
+    </sql>
+
+</mapper>

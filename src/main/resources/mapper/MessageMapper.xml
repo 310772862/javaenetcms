@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.MessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.Message">
+        <result column="ID" property="ID" />
+        <result column="COUNTRY" property="COUNTRY" />
+        <result column="COMPANY" property="COMPANY" />
+        <result column="FRIST_NAME" property="FRIST_NAME" />
+        <result column="NAME" property="NAME" />
+        <result column="SEX" property="SEX" />
+        <result column="TYPE" property="TYPE" />
+        <result column="TEL" property="TEL" />
+        <result column="EMAIL" property="EMAIL" />
+        <result column="TITLE" property="TITLE" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="ADDRESS" property="ADDRESS" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="IP" property="IP" />
+        <result column="ISVIEW" property="ISVIEW" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="STATUS" property="STATUS" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        COUNTRY, COMPANY, FRIST_NAME, NAME, SEX, TYPE, TEL, EMAIL, TITLE, CONTENT, ADDRESS, CREATE_TIME, IP, ISVIEW, IS_DEL, STATUS
+    </sql>
+
+</mapper>

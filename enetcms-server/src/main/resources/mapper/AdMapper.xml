@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.AdMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Ad">
+        <result column="ID" property="ID" />
+        <result column="MODEL_ID" property="MODEL_ID" />
+        <result column="NAME" property="NAME" />
+        <result column="IMAGE" property="IMAGE" />
+        <result column="ICON" property="ICON" />
+        <result column="DESCRIPTION" property="DESCRIPTION" />
+        <result column="URL" property="URL" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="STATUS" property="STATUS" />
+        <result column="WEBSITE_ID" property="WEBSITE_ID" />
+        <result column="IS_DEL" property="IS_DEL" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        MODEL_ID, NAME, IMAGE, ICON, DESCRIPTION, URL, CREATE_TIME, SORT_ID, STATUS, WEBSITE_ID, IS_DEL
+    </sql>
+
+</mapper>

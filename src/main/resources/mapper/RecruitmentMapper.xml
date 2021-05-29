@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.RecruitmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.Recruitment">
+        <id column="CONTENT_ID" property="CONTENT_ID" />
+        <result column="CATEGORY" property="CATEGORY" />
+        <result column="JOB_TYPE" property="JOB_TYPE" />
+        <result column="EDUCATION" property="EDUCATION" />
+        <result column="SEX" property="SEX" />
+        <result column="AGE" property="AGE" />
+        <result column="NUM" property="NUM" />
+        <result column="WORKPLACE" property="WORKPLACE" />
+        <result column="COMPANY" property="COMPANY" />
+        <result column="EXPERIENCE" property="EXPERIENCE" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="QUALIFICATIONS" property="QUALIFICATIONS" />
+        <result column="WORKBENEFITS" property="WORKBENEFITS" />
+        <result column="TREATMENT" property="TREATMENT" />
+        <result column="START_TIME" property="START_TIME" />
+        <result column="END_TIME" property="END_TIME" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONTENT_ID, CATEGORY, JOB_TYPE, EDUCATION, SEX, AGE, NUM, WORKPLACE, COMPANY, EXPERIENCE, CONTENT, QUALIFICATIONS, WORKBENEFITS, TREATMENT, START_TIME, END_TIME
+    </sql>
+
+</mapper>

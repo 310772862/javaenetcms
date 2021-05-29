@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.AreaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.Area">
+        <id column="CONTENT_ID" property="CONTENT_ID" />
+        <result column="OPENING_HOURS" property="OPENING_HOURS" />
+        <result column="IMAGE" property="IMAGE" />
+        <result column="HOME_IMAGE" property="HOME_IMAGE" />
+        <result column="PIC" property="PIC" />
+        <result column="BIG_PIC" property="BIG_PIC" />
+        <result column="DESCRIPTION" property="DESCRIPTION" />
+        <result column="CONTENT" property="CONTENT" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONTENT_ID, OPENING_HOURS, IMAGE, HOME_IMAGE, PIC, BIG_PIC, DESCRIPTION, CONTENT
+    </sql>
+
+</mapper>

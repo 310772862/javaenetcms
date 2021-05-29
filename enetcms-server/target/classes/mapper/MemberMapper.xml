@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.MemberMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Member">
+        <result column="ID" property="ID" />
+        <result column="USERNAME" property="USERNAME" />
+        <result column="PASSWORD" property="PASSWORD" />
+        <result column="ENCRYPT" property="ENCRYPT" />
+        <result column="OPENID" property="OPENID" />
+        <result column="NICKNAME" property="NICKNAME" />
+        <result column="SEX" property="SEX" />
+        <result column="HEADIMGURL" property="HEADIMGURL" />
+        <result column="BGIMGURL" property="BGIMGURL" />
+        <result column="NAME" property="NAME" />
+        <result column="PHONE" property="PHONE" />
+        <result column="EMAIL" property="EMAIL" />
+        <result column="INTEGRAL" property="INTEGRAL" />
+        <result column="CERTIFICATION" property="CERTIFICATION" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="STATUS" property="STATUS" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="CSRQ" property="CSRQ" />
+        <result column="SG" property="SG" />
+        <result column="GZJYN" property="GZJYN" />
+        <result column="XJZD" property="XJZD" />
+        <result column="BYXY" property="BYXY" />
+        <result column="HYQK" property="HYQK" />
+        <result column="XL" property="XL" />
+        <result column="ZX" property="ZX" />
+        <result column="DNSP" property="DNSP" />
+        <result column="YYSP" property="YYSP" />
+        <result column="QZYX" property="QZYX" />
+        <result column="JYBJ" property="JYBJ" />
+        <result column="GZJL" property="GZJL" />
+        <result column="XMJY" property="XMJY" />
+        <result column="XXJY" property="XXJY" />
+        <result column="XYJL" property="XYJL" />
+        <result column="JNTC" property="JNTC" />
+        <result column="RYZS" property="RYZS" />
+        <result column="ZWPJ" property="ZWPJ" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        USERNAME, PASSWORD, ENCRYPT, OPENID, NICKNAME, SEX, HEADIMGURL, BGIMGURL, NAME, PHONE, EMAIL, INTEGRAL, CERTIFICATION, CREATE_TIME, STATUS, IS_DEL, CSRQ, SG, GZJYN, XJZD, BYXY, HYQK, XL, ZX, DNSP, YYSP, QZYX, JYBJ, GZJL, XMJY, XXJY, XYJL, JNTC, RYZS, ZWPJ
+    </sql>
+
+</mapper>

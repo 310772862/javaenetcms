@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.CategoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Category">
+        <result column="ID" property="ID" />
+        <result column="TYPE" property="TYPE" />
+        <result column="VIDEO_URL" property="VIDEO_URL" />
+        <result column="AUDIT_RULE_ID" property="AUDIT_RULE_ID" />
+        <result column="PARENT_ID" property="PARENT_ID" />
+        <result column="DIR" property="DIR" />
+        <result column="NAME" property="NAME" />
+        <result column="ICON" property="ICON" />
+        <result column="ALIAS" property="ALIAS" />
+        <result column="IMAGE" property="IMAGE" />
+        <result column="PIC" property="PIC" />
+        <result column="PIC_TITLE" property="PIC_TITLE" />
+        <result column="DESCRIPTION" property="DESCRIPTION" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="META_TITLE" property="META_TITLE" />
+        <result column="META_KEYWORDS" property="META_KEYWORDS" />
+        <result column="META_DESCRIPTION" property="META_DESCRIPTION" />
+        <result column="URL" property="URL" />
+        <result column="CATEGORY_TEMPLATE" property="CATEGORY_TEMPLATE" />
+        <result column="LIST_TEMPLATE" property="LIST_TEMPLATE" />
+        <result column="SHOW_TEMPLATE" property="SHOW_TEMPLATE" />
+        <result column="TEMPLATE_CHILD" property="TEMPLATE_CHILD" />
+        <result column="MENU_SHOW" property="MENU_SHOW" />
+        <result column="BLANK" property="BLANK" />
+        <result column="MODEL_ID" property="MODEL_ID" />
+        <result column="PAGE_TYPE" property="PAGE_TYPE" />
+        <result column="PAGE_NUM" property="PAGE_NUM" />
+        <result column="WEBSITE_ID" property="WEBSITE_ID" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="VIEW" property="VIEW" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="STATUS" property="STATUS" />
+        <result column="PIC_WIDTH" property="PIC_WIDTH" />
+        <result column="PIC_HEIGHT" property="PIC_HEIGHT" />
+        <result column="IS_YEAR" property="IS_YEAR" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="JSON" property="JSON" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        TYPE, VIDEO_URL, AUDIT_RULE_ID, PARENT_ID, DIR, NAME, ICON, ALIAS, IMAGE, PIC, PIC_TITLE, DESCRIPTION, CONTENT, META_TITLE, META_KEYWORDS, META_DESCRIPTION, URL, CATEGORY_TEMPLATE, LIST_TEMPLATE, SHOW_TEMPLATE, TEMPLATE_CHILD, MENU_SHOW, BLANK, MODEL_ID, PAGE_TYPE, PAGE_NUM, WEBSITE_ID, SORT_ID, VIEW, CREATE_TIME, STATUS, PIC_WIDTH, PIC_HEIGHT, IS_YEAR, IS_DEL, JSON
+    </sql>
+
+</mapper>

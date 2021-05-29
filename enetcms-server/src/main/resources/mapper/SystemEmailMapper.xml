@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.SystemEmailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.SystemEmail">
+        <result column="ID" property="ID" />
+        <result column="MAIL_SERVER" property="MAIL_SERVER" />
+        <result column="MAIL_PORT" property="MAIL_PORT" />
+        <result column="MAIL_SMTPAUTH" property="MAIL_SMTPAUTH" />
+        <result column="MAIL_FROMNAME" property="MAIL_FROMNAME" />
+        <result column="MAIL_FROM" property="MAIL_FROM" />
+        <result column="MAIL_USER" property="MAIL_USER" />
+        <result column="MAIL_PASSWORD" property="MAIL_PASSWORD" />
+        <result column="MAIL_CHARSET" property="MAIL_CHARSET" />
+        <result column="MAIL_ISHTML" property="MAIL_ISHTML" />
+        <result column="IS_DEL" property="IS_DEL" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        MAIL_SERVER, MAIL_PORT, MAIL_SMTPAUTH, MAIL_FROMNAME, MAIL_FROM, MAIL_USER, MAIL_PASSWORD, MAIL_CHARSET, MAIL_ISHTML, IS_DEL
+    </sql>
+
+</mapper>

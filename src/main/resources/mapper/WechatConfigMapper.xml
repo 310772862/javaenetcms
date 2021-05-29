@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mapper.WechatConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.pojo.WechatConfig">
+        <result column="ID" property="ID" />
+        <result column="WEIXIN" property="WEIXIN" />
+        <result column="APPID" property="APPID" />
+        <result column="APPSECRET" property="APPSECRET" />
+        <result column="TOKEN" property="TOKEN" />
+        <result column="ACCESS_TOKEN" property="ACCESS_TOKEN" />
+        <result column="UPDATE_TIME" property="UPDATE_TIME" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        WEIXIN, APPID, APPSECRET, TOKEN, ACCESS_TOKEN, UPDATE_TIME
+    </sql>
+
+</mapper>

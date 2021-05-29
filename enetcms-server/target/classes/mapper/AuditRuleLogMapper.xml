@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.AuditRuleLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.AuditRuleLog">
+        <result column="ID" property="ID" />
+        <result column="CONTENT_ID" property="CONTENT_ID" />
+        <result column="ADMIN_ID" property="ADMIN_ID" />
+        <result column="STATUS" property="STATUS" />
+        <result column="CONTENT" property="CONTENT" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="IP" property="IP" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        CONTENT_ID, ADMIN_ID, STATUS, CONTENT, CREATE_TIME, IP
+    </sql>
+
+</mapper>

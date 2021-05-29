@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.AdModelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.AdModel">
+        <result column="ID" property="ID" />
+        <result column="NAME" property="NAME" />
+        <result column="WIDTH" property="WIDTH" />
+        <result column="HEIGHT" property="HEIGHT" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="STATUS" property="STATUS" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="IS_DEL" property="IS_DEL" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        NAME, WIDTH, HEIGHT, CREATE_TIME, STATUS, SORT_ID, IS_DEL
+    </sql>
+
+</mapper>

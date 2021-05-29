@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.server.mapper.ContentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxx.server.pojo.Content">
+        <result column="ID" property="ID" />
+        <result column="CATEGORY_ID" property="CATEGORY_ID" />
+        <result column="DIR" property="DIR" />
+        <result column="NAME" property="NAME" />
+        <result column="URL" property="URL" />
+        <result column="ICON" property="ICON" />
+        <result column="TAGS" property="TAGS" />
+        <result column="META_TITLE" property="META_TITLE" />
+        <result column="META_KEYWORDS" property="META_KEYWORDS" />
+        <result column="META_DESCRIPTION" property="META_DESCRIPTION" />
+        <result column="CREATE_TIME" property="CREATE_TIME" />
+        <result column="RELEASE_TIME" property="RELEASE_TIME" />
+        <result column="SORT_ID" property="SORT_ID" />
+        <result column="AUDIT" property="AUDIT" />
+        <result column="AUDIT_RULE_STEP" property="AUDIT_RULE_STEP" />
+        <result column="AUDIT_RULE_ADMIN_ID" property="AUDIT_RULE_ADMIN_ID" />
+        <result column="ADMIN_ID" property="ADMIN_ID" />
+        <result column="STATUS" property="STATUS" />
+        <result column="BLANK" property="BLANK" />
+        <result column="IS_HOT" property="IS_HOT" />
+        <result column="IS_TOP" property="IS_TOP" />
+        <result column="IS_DEL" property="IS_DEL" />
+        <result column="IS_DRAFT" property="IS_DRAFT" />
+        <result column="MODEL" property="MODEL" />
+        <result column="VIEW" property="VIEW" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID,
+        CATEGORY_ID, DIR, NAME, URL, ICON, TAGS, META_TITLE, META_KEYWORDS, META_DESCRIPTION, CREATE_TIME, RELEASE_TIME, SORT_ID, AUDIT, AUDIT_RULE_STEP, AUDIT_RULE_ADMIN_ID, ADMIN_ID, STATUS, BLANK, IS_HOT, IS_TOP, IS_DEL, IS_DRAFT, MODEL, VIEW
+    </sql>
+
+    <!--查询列表-->
+    <select id="getList" parameterType="java.util.Map" resultType="java.util.LinkedHashMap">
+        select * from ${prefix}CONTENT where is_del = 0
+        <if test="name!=null">
+            and NAME like concat('%',#{name},'%')
+        </if>
+        <if test="keyword!=null">
+            and META_KEYWORDS like concat('%',#{keyword},'%')
+        </if>
+    </select>
+
+</mapper>
