@@ -55,10 +55,11 @@ public class SystemAdminServiceImpl extends ServiceImpl<SystemAdminMapper, Syste
      */
     @Override
     public RespBean login(String username, String password, String code, HttpServletRequest request) {
+        /* 由于不同域名原因，暂不处理验证码验证，正式系统再开放
         String captcha = (String) request.getSession().getAttribute("captcha");
         if (StringUtils.isEmpty(code) || !captcha.equalsIgnoreCase(code)) {
             return RespBean.error("验证码输入错误，请重新输入！");
-        }
+        }*/
         // 登录
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         if (null == userDetails || !passwordEncoder.matches(password, userDetails.getPassword())) {

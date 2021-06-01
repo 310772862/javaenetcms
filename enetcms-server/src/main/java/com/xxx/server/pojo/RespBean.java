@@ -10,45 +10,57 @@ import lombok.NoArgsConstructor;
 public class RespBean {
 
     private long code;
-    private String message;
-    private Object obj;
+    private String msg;
+    private Object data;
+    private Integer count;
 
     /**
      * 成功返回结果
-     * @param message
+     * @param msg
      * @return
      */
-    public static RespBean success(String message) {
-        return new RespBean(200, message, null);
+    public static RespBean success(String msg) {
+        return new RespBean(200, msg, null, 0);
     }
 
     /**
      * 成功返回结果
-     * @param message
-     * @param obj
+     * @param msg
+     * @param data
      * @return
      */
-    public static RespBean success(String message, Object obj) {
-        return new RespBean(200, message, obj);
+    public static RespBean success(String msg, Object data) {
+        return new RespBean(200, msg, data, 0);
+    }
+
+    /**
+     * 成功反回数据结果
+     * @param msg
+     * @param data
+     * @param count
+     * @return
+     */
+    public static RespBean success(String msg, Object data, Integer count) {
+        return new RespBean(200, msg, data, count);
     }
 
     /**
      * 失败返回结果
-     * @param message
+     * @param msg
      * @return
      */
-    public static RespBean error(String message){
-        return new RespBean(500, message, null);
+    public static RespBean error(String msg){
+        return new RespBean(500, msg, null,0);
     }
 
     /**
      * 失败返回结果
-     * @param message
-     * @param obj
+     * @param msg
+     * @param data
      * @return
      */
-    public static RespBean error(String message, Object obj){
-        return new RespBean(500, message, obj);
+    public static RespBean error(String msg, Object data){
+        return new RespBean(500, msg, data,0);
     }
 
 }

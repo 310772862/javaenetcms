@@ -40,6 +40,10 @@
         )
         and
         a.ID = #{id}
+        and m.IS_SHOW = 1
+        and m.STATUS = 1
+        and m.IS_DEL = 0
+        ORDER BY SORT_ID desc,ID asc
     </select>
 
 </mapper>

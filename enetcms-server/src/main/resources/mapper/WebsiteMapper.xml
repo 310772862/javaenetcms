@@ -29,4 +29,21 @@
         NAME, LANGUAGE, TITLE, KEYWORDS, DESCRIPTION, TEL, EMAIL, ADDRESS, MIIBEIAN, COPY, CODE, IS_DEFAULT, CREATE_TIME, SORT_ID, STATUS, IS_DEL
     </sql>
 
+
+    <select id="getWebsiteList" resultType="com.xxx.server.pojo.Website">
+        select * from ${prefix}WEBSITE where IS_DEL = 0
+        <if test="name!=null">
+            and NAME like concat('%',#{name},'%')
+        </if>
+        limit #{start_limit},#{page_num} order by is_default desc,id asc
+    </select>
+
+
+    <select id="getWebsiteCount" resultType="Integer">
+        select count(ID) as count from ${prefix}WEBSITE where IS_DEL = 0
+        <if test="name!=null">
+            and NAME like concat('%',#{name},'%')
+        </if>
+    </select>
+
 </mapper>

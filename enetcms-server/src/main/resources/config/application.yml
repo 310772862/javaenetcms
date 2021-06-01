@@ -45,3 +45,6 @@ jwt:
   expiration: 604800
   # JWT 负载中拿到开头
   tokenHead: Bearer
+website:
+  # 每页显示多少个
+  page_num: 1
