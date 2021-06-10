@@ -18,4 +18,8 @@
         NAME, PROCESS, STATUS, CREATE_TIME, IS_DEL
     </sql>
 
+    <select id="getAuditRuleList" resultType="com.xxx.server.pojo.AuditRule">
+        select * from ${prefix}AUDIT_RULE where IS_DEL=0 ORDER by CREATE_TIME DESC,ID asc
+    </select>
+
 </mapper>

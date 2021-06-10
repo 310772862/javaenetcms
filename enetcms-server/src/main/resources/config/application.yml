@@ -16,6 +16,12 @@ spring:
     hibernate:
       ddl:
         auto: none
+  servlet:
+    multipart:
+      # 上传文件总的最大值
+      max-request-size: 128MB
+      # 单个文件的最大值
+      max-file-size: 30MB
 
 # Mybatis-plus配置
 mybatis-plus:
@@ -47,4 +53,8 @@ jwt:
   tokenHead: Bearer
 website:
   # 每页显示多少个
-  page_num: 1
+  page_num: 12
+# 文件上传路径
+pro:
+  uploadPath: /upload
+

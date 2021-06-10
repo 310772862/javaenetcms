@@ -3,6 +3,8 @@ package com.xxx.server.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xxx.server.pojo.AuditRule;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +15,9 @@ import com.xxx.server.pojo.AuditRule;
  */
 public interface AuditRuleMapper extends BaseMapper<AuditRule> {
 
+    /**
+     * 获取审核流程
+     * @return
+     */
+    List<AuditRule> getAuditRuleList();
 }

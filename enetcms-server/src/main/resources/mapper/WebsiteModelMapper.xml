@@ -25,4 +25,8 @@
         NAME, TAG, CONTENT, CATEGORY_TEMPLATE, LIST_TEMPLATE, SHOW_TEMPLATE, DEFAULT_TEMPLATE, STATUS, ICON, SORT_ID, CREATE_TIME, IS_DEL
     </sql>
 
+    <select id="getWebsiteModelList" resultType="com.xxx.server.pojo.WebsiteModel">
+        select * from ${prefix}WEBSITE_MODEL where IS_DEL = 0
+    </select>
+
 </mapper>

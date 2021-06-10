@@ -3,10 +3,8 @@ package com.xxx.server.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xxx.server.pojo.RespBean;
 import com.xxx.server.pojo.SystemAdmin;
-import com.xxx.server.pojo.SystemMenu;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 /**
  * <p>

@@ -2,6 +2,7 @@ package com.xxx.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xxx.server.pojo.AuditRule;
+import com.xxx.server.pojo.RespBean;
 
 /**
  * <p>
@@ -13,4 +14,9 @@ import com.xxx.server.pojo.AuditRule;
  */
 public interface IAuditRuleService extends IService<AuditRule> {
 
+    /**
+     * 获取审核流程列表
+     * @return
+     */
+    RespBean getAuditRuleList();
 }

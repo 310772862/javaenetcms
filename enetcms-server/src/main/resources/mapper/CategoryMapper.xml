@@ -49,4 +49,16 @@
         TYPE, VIDEO_URL, AUDIT_RULE_ID, PARENT_ID, DIR, NAME, ICON, ALIAS, IMAGE, PIC, PIC_TITLE, DESCRIPTION, CONTENT, META_TITLE, META_KEYWORDS, META_DESCRIPTION, URL, CATEGORY_TEMPLATE, LIST_TEMPLATE, SHOW_TEMPLATE, TEMPLATE_CHILD, MENU_SHOW, BLANK, MODEL_ID, PAGE_TYPE, PAGE_NUM, WEBSITE_ID, SORT_ID, VIEW, CREATE_TIME, STATUS, PIC_WIDTH, PIC_HEIGHT, IS_YEAR, IS_DEL, JSON
     </sql>
 
+    <select id="getCategoryList" resultType="com.xxx.server.pojo.Category">
+        select * from ${prefix}CATEGORY where IS_DEL=0
+        <if test="website_id!=null">
+            and WEBSITE_ID  = #{website_id}
+        </if>
+        ORDER by SORT_ID DESC,ID asc
+    </select>
+
+    <select id="getCategoryInfo" resultType="com.xxx.server.pojo.Category">
+        select * from ${prefix}CATEGORY where IS_DEL=0 and ID = #{id}
+    </select>
+
 </mapper>
