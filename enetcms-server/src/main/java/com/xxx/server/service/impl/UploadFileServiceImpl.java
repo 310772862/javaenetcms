@@ -94,7 +94,8 @@ public class UploadFileServiceImpl extends ServiceImpl<UploadFileMapper, UploadF
             multipartFile.transferTo(file);
             // 获取存储路径
             String filePath = getUploadPath(request, format + "/" + newFileName);
-            map.put("path", filePath);
+            map.put("url", filePath);
+            map.put("name", fileName);
         } catch (MaxUploadSizeExceededException e) {
             return RespBean.error("上传失败", e.getMessage());
         } catch (IOException e) {

@@ -58,7 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/v2/api-docs/**",
                 "/captcha",
                 "/enetcms_admin/**",
-                "/upload/**"
+                "/upload/**",
+                "/ueditor/**"
         );
     }
 
